@@ -1,10 +1,13 @@
+import PeoplePage from '../PeoplePage';
+// import cn from 'classnames';//в аргументы передаю имена классов classnames(styles.header, styles.text) и тд
 import styles from './App.module.css';//модульный импорт css
-import cn from 'classnames';
 // console.log(styles);
+// import { getApiResource } from '../../utils/network';
+
 
 const App = () => {
   return (
-    <h1 className={cn(styles.header, styles.text)}>React</h1>
+    <PeoplePage />
   )
 }
 
