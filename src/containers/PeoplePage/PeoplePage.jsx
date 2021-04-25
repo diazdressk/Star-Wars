@@ -9,7 +9,6 @@ import { getApiResource } from '@utils/network';
 import { getPeopleId, getPeopleImage } from '@services/getPeopleData';
 import { API_PEOPLE } from '@constants/api';
 
-
 const PeoplePage = ({ setErrorApi }) => {
     const [people, setPeople] = useState(null);
 
@@ -37,13 +36,13 @@ const PeoplePage = ({ setErrorApi }) => {
 
     return (
         <>
-            <h1>Navigation</h1>
+            <h1 className="header__text">Navigation</h1>
             {people && <PeopleList people={people} />}
         </>
     );
 };
 
 PeoplePage.propTypes = {
-  setErrorApi: PropTypes.func//setErrorApi должен быть функцией!
+    setErrorApi: PropTypes.func, //setErrorApi должен быть функцией!
 };
 export default withErrorApi(PeoplePage);
