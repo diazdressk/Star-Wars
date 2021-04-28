@@ -47,9 +47,8 @@ const PeoplePage = ({ setErrorApi }) => {
     useEffect(() => {
         getResource(API_PEOPLE + queryPage);
         // getResource('https://swapi.dev/api/people/?page=3');
-    }, [queryPage]);//буду следить за изменением queryPage
-    //тк я слежу за queryPage, при его изменении,происходит рендер и на страницу уже загружаются новые персонажи
-
+    }, []);
+    
     return (
         <>
             <PeopleNavigation 
