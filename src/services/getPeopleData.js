@@ -1,5 +1,6 @@
 import {
     SWAPI_PEOPLE,
+    SWAPI_PARAM_PAGE,
     HTTP,
     SWAPI_ROOT,
     GUIDE_IMG_EXTENSION,
@@ -16,3 +17,14 @@ const getId = (url, category) => {
 export const getPeopleId = (url) => getId(url, SWAPI_PEOPLE); //вычленяю id персонажа
 
 export const getPeopleImage = (id) => `${URL_IMG_PERSON}/${id+GUIDE_IMG_EXTENSION}`;//собираю путь до картинки персонажа
+
+
+/**jdoc
+ * фУнкция запрать номер страницы из url
+ */
+export const getPeoplePageId = url => {
+    const pos = url.lastIndexOf(SWAPI_PARAM_PAGE);//SWAPI_PARAM_PAGE = '/?page='
+    const id = url.slice(pos+SWAPI_PARAM_PAGE.length);//срезаю из url всё,кроме номера страницы https://swapi.dev/api/people/?page=1
+    // console.log(id);
+    return Number(id);
+}

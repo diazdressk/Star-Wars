@@ -1,4 +1,12 @@
 //ЗАПРОС НА СЕРВЕР
+import { HTTP, HTTPS } from '@constants/api';
+
+/**jdoc комментарий называется, можно вот так документировать, |** *|- выводится при таком написании
+ * Изменяет URL с HTTP на HTTPS
+ * @param {String} url -url для изменения
+ * @returns {String} - urls c HTTPS
+ */
+export const changeHttp = url => url ? url.replace( HTTP, HTTPS) : url;//меняет http на https,тк в гитхабе можно отправлять заропсы только на https,а сервер у меня на http
 
 // export const getApiResource = (url) => {
 //     fetch(url)
@@ -7,6 +15,11 @@
 //         .catch(err => console.error(err.message));
 // };
 
+/**
+ * Отправляет запрос fetch
+ * @param {String} url -url для запроса 
+ * @returns {Promise} -Promise с результатом запроса
+ */
 export const getApiResource = async (url) => {
     //асинхронно
     try {
