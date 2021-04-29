@@ -10,6 +10,7 @@ import { getApiResource, changeHttp } from '@utils/network';
 import { getPeopleId, getPeopleImage, getPeoplePageId } from '@services/getPeopleData';
 import { API_PEOPLE } from '@constants/api';
 import { useQueryParams } from '@hooks/useQueryParams';
+
 const PeoplePage = ({ setErrorApi }) => {
     const [people, setPeople] = useState(null);
     const [prevPage, setPrevPage] = useState(null);

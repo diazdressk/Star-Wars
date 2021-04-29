@@ -11,7 +11,7 @@ const Header = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/people/?page=1" exact>
+                    <NavLink to="/people/?page=1">
                         People
                     </NavLink>
                 </li>
