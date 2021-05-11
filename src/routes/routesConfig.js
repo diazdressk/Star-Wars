@@ -2,6 +2,7 @@ import PeoplePage from '@containers/PeoplePage';
 import PersonPage from '@containers/PersonPage';
 import HomePage from '@containers/HomePage';
 import NotFoundPage from '@containers/NotFoundPage';
+import FavoritePage from '@containers/FavoritePage';
 
 const routesConfig = [
     {
@@ -13,6 +14,11 @@ const routesConfig = [
         path: '/people',
         exact: true,
         component: PeoplePage,
+    },
+    {
+        path: '/favorites',
+        exact: true,
+        component: FavoritePage,
     },
     {
         path: '/people/:id',//id динамический параметр,поэтому указываю через :
