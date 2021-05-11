@@ -16,7 +16,7 @@
     --spacing-large: 30px;
 
     --margin-list: 7px;
-    
+
     --font-size-header: 26px;
     --font-size-subheader: 18px;
     --font-size-main: 16px;
@@ -28,6 +28,12 @@
     --width-max: 1200px;
 
     --transition: 0.4s;
+
+    --box-shadow-white: 0 16px 24px 2px rgba(255, 255, 255, 0.02),
+        0 6px 30px 5px rgba(255, 255, 255, 0.04), 0 8px 10px -5px rgba(255, 255, 255, 0.1);
+
+    --box-shadow-black: 0 16px 24px 2px rgba(0, 0, 0, 0.5), 0 6px 30px 5px rgba(0, 0, 0, 0.1),
+        0 8px 10px -5px rgba(0, 0, 0, 0.2);
 
     --theme-default-header: #cccc46;
     --theme-default-bgimage: url(@static/bg.jpg);
