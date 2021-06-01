@@ -51,6 +51,12 @@
   --text-shadow-blue: 0 0 2px var(--color-white), 0 0 40px var(--color-blue);
 }
 
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;

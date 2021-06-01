@@ -3,6 +3,7 @@ import PersonPage from '@containers/PersonPage';
 import HomePage from '@containers/HomePage';
 import NotFoundPage from '@containers/NotFoundPage';
 import FavoritePage from '@containers/FavoritePage';
+import SearchPage from '@containers/SearchPage';
 
 const routesConfig = [
     {
@@ -19,6 +20,11 @@ const routesConfig = [
         path: '/favorites',
         exact: true,
         component: FavoritePage,
+    },
+    {
+        path: '/search',
+        exact: true,
+        component: SearchPage,
     },
     {
         path: '/people/:id',//id динамический параметр,поэтому указываю через :
