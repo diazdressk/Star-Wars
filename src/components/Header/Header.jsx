@@ -54,6 +54,11 @@ const Header = () => {
             Not found
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/fail" exact>
+            Fail
+          </NavLink>
+        </li>
       </ul>
       <Favorite />
     </div>

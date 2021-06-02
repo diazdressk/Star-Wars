@@ -82,3 +82,32 @@ img {
   transition: color var(--transition);
   /* изменение */
 }
+
+
+
+/* scrolllll */
+
+/* для firefox */
+* {
+  scrollbar-color: rgb(23, 117, 204) rgba(90, 113, 133, 0.418);
+  scrollbar-width: thin;
+}
+
+/* chrome */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(23, 117, 204);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(90, 113, 133, 0.418);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: rgba(90, 113, 133, 0.418);
+}

@@ -4,6 +4,7 @@ import HomePage from '@containers/HomePage';
 import NotFoundPage from '@containers/NotFoundPage';
 import FavoritePage from '@containers/FavoritePage';
 import SearchPage from '@containers/SearchPage';
+import ErrorMessage from '@components/ErrorMessage';
 
 const routesConfig = [
     {
@@ -30,6 +31,11 @@ const routesConfig = [
         path: '/people/:id',//id динамический параметр,поэтому указываю через :
         exact: true,
         component: PersonPage,
+    },
+    {
+        path: '/fail',
+        exact: true,
+        component: ErrorMessage,
     },
     {
         path: '/not-found',
