@@ -1,4 +1,3 @@
-React.js
 Разворачивание приложения с create-react-app
 Состояние компонента (хук useState)
 Жизненный цикл компонента (хук useEffect)
@@ -15,7 +14,6 @@ Controlled Components
 Списки и ключи, Reconciliation Algorithm
 Отложенная загрузка компонентов React.lazy()
 Библиотека prop-types для валидации props
-React Router
 Базовый роутинг
 URL Parameters
 Query Parameters
@@ -27,13 +25,16 @@ Redux
 Redux Middleware
 Создание асинхронных action с библиотекой redux-thunk
 Отслеживание состояния store с redux-devtools-extension
-Общее
+
+
+
+
+
 Задание Alias в React-приложении (библиотека react-app-rewire-alias)
 Деплой приложения на GitHub Pages (библиотека gh-pages)
 Создание Ui-Kit из визуальных компонентов и публикация в @storybook
 Библиотека lodash с готовыми функциями
 Visual Studio Code. Сниппеты и плагины
-JavaScript
 Методы работы с массивами: map, filter, forEach
 Асинхронность: Promise, Async Functions
 ES6-модули (import и export)
@@ -42,7 +43,6 @@ ES6-модули (import и export)
 Тернарные операторы
 Работа с Local Storage
 Работа с API с использованием Fetch
-Вёрстка
 CSS Custom Properties, изменение через JavaScript
 CSS Filters
 CSS Flexbox
